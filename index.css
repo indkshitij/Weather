@@ -140,6 +140,10 @@
     gap: 1.5vh;
     padding: 1vh 2vw 2vh 2vw;
   }
+  
+  .container #Mainbg{
+    object-fit: cover;
+  }
   .weatherContainer h1 {
     font-size: 3rem;
   }
