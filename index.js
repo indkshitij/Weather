@@ -27,9 +27,9 @@ let fetchWeather = async (cityNameValue) => {
     console.log(data);
 
     // Display Info
-
+    infoContainer.style.display = "block";
     // Update Weather
-    temp.innerHTML = `${data.main.temp} °C`;
+    temp.innerHTML = `${Math.round(data.main.temp)}°C`;
     showName.innerHTML = data.name;
     humidity.innerHTML = `${data.main.humidity}%`;
     windSpeed.innerHTML = `${data.wind.speed} km/hr`;
