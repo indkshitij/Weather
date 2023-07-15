@@ -4,6 +4,7 @@ let showName = document.getElementById("showName");
 let weatherImg = document.getElementById("weatherImg");
 let temp = document.getElementById("temp");
 let humidity = document.getElementById("humidity");
+let weatherType= document.getElementById("weatherType");
 let windSpeed = document.getElementById("windSpeed");
 let infoContainer = document.getElementById("infoContainer");
 let Mainbg = document.getElementById("Mainbg");
@@ -30,6 +31,7 @@ let fetchWeather = async (cityNameValue) => {
     infoContainer.style.display = "block";
     // Update Weather
     temp.innerHTML = `${Math.round(data.main.temp)}°C`;
+    weatherType.innerHTML = `${data.weather[0].main}`
     showName.innerHTML = data.name;
     humidity.innerHTML = `${data.main.humidity}%`;
     windSpeed.innerHTML = `${data.wind.speed} km/hr`;

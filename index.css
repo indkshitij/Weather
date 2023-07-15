@@ -103,6 +103,9 @@
   font-size: 4rem;
   font-weight: 500;
 }
+#weatherType{
+  font-size: 2.5rem;
+}
 #showName {
   font-size: 2.5rem;
   font-weight: 600;
